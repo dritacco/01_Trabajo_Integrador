@@ -1,1 +1,113 @@
 /* // Header */ /* // Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  color: rgb(200, 200, 200);
+}
+footer .footer__form {
+  background-color: rgb(80, 80, 80);
+}
+
+@media (min-width: 375px) {
+  footer {
+    height: auto;
+  }
+  footer .footer__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  footer .footer__form .form__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin: 10px;
+  }
+  footer .footer__form .form__input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+  }
+  footer .footer__form .form__input .form__input-text {
+    border: 3px solid rgb(200, 200, 200);
+    color: rgb(100, 100, 100);
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  footer .footer__form .form__input .form__input-buttom {
+    border: 1px solid rgb(200, 200, 200);
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    margin: 5px;
+    cursor: pointer;
+  }
+  footer .footer__form .form__input .form__input-buttom:hover {
+    background-color: rgb(200, 200, 200);
+    color: white;
+  }
+  footer .footer__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-bottom: solid 1px rgb(200, 200, 200);
+    margin: 10px;
+  }
+  footer .footer__follow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-bottom: solid 1px rgb(200, 200, 200);
+    margin: 10px;
+  }
+  footer .footer__follow .logo__fb {
+    margin-left: 20px;
+  }
+  footer .footer__brand {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  footer .footer__brand .brand__copy {
+    margin: 10px 0 10px 0;
+  }
+  footer .footer__brand .footer__brand-refer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer__brand .footer__brand-refer .brand__cace {
+    margin: 5px;
+  }
+  footer .footer__brand .footer__brand-refer .brand__afip {
+    margin: 5px;
+  }
+  footer .footer__brand .footer__brand-refer .brand__cruce {
+    margin: 5px;
+  }
+  footer .footer__brand .footer__brand-refer .brand__vtex {
+    margin: 5px;
+  }
+}
+@media (min-width: 1440px) {
+  footer {
+    height: 100px;
+  }
+}
