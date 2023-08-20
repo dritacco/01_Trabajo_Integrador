@@ -137,16 +137,75 @@ footer{
 
         }
 
+    }
+}
 
-
+// Estilos Tablet
+@include M.medias(tablet) {
+    .form__input-text {
+        text-align: center;
     }
 
 }
 
+
 // Estilos Desktop
 @include M.medias(desktop) {
     footer{
-        height: 100px;
-    }
+        .footer__form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
 
+            .form__input {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+                margin: 5px;
+                margin-right: 20px;
+    
+                .form__input-buttom{
+                    width: 20%;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .footer__box {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+
+            .follow__p {
+                margin-bottom: 10px;
+            }
+
+            .footer__contact {
+                width: 12%;
+                margin: 10px;
+            }
+
+            .footer__follow {
+                display: flex;
+                flex-direction: column;
+                width: 12%;
+            }
+        }
+
+        .footer__brand {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .footer__brand-logo{
+                display: flex;
+
+                .brand__copy {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
 }
