@@ -7,7 +7,6 @@
     <title>Document</title>
 
     <script defer src="../src/js/main.js"></script>
-
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/normalizer.css">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -15,25 +14,52 @@
 <body>
     <header class="Header">
 
-        <section class="section">
-            <article class="article">
-                <picture class="header__logo">
-                    <img src="../public/images/logoHeader.svg" alt="Logo Header">
+        <section class="banner__article">
+            <article class="article__top">
+<!--iconos banner superior-->
+                <picture class="top__icon">
+                    <img src="../public/icons/icon-location.webp" alt="Location Icon" width="24" height="24px">
+                    <p>ENVÍOS A TODO EL PAÍS</p>
+                    <img src="../public/icons/icon-card.webp" alt="Card Icon" width="24" height="24px">
+                    <p>CUOTAS SIN INTERÉS</p>
                 </picture>
             </article>
         </section>
 
-        <nav class="header__navbar">
-            <ul>
-                <li><a href="../public/index.html">Home</a></li>
-                <li><a href="../public/pages/alta.html">Alta</a></li>
-                <li><a href="../public/pages/contacto.html">Contacto</a></li>
-                <li><a href="../public/pages/nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
+        <section class="main__article">
+<!--Logo de la marca-->
+            <article class="article__logo">
+                <picture class="article__logo-img">
+                    <img src="../public/images/logoHeader.svg" alt="Logo Header">
+                </picture>
+            </article>
+
+<!--Barra de navegación-->
+            <article class="article__navbar">
+                <nav class="navbar__nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-home"><a href="../public/index.html">Home</a></li>
+                        <li class="nav__list-add"><a href="../public/pages/alta.html">Alta</a></li>
+                        <li class="nav__list-contact"><a href="../public/pages/contacto.html">Contacto</a></li>
+                        <li class="nav__list-about"><a href="../public/pages/nosotros.html">Nosotros</a></li>
+                    </ul>
+                </nav>
+            </article>
+<!--Icono de carrito de compras-->
+            <article class="article__shop">
+                <picture class="shop__icon">
+                    <img src="../public/icons/icon-bag.png" alt="Shop Icon" width="24" height="24px">
+                </picture>
+            </article>
+        </section>
     </header>
 
+
     <main class="Main">
+
+    </main>
+
+
 
 
     <footer class="Footer">

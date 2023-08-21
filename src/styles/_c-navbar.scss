@@ -1,1 +1,24 @@
 /* // Navbar */
+
+@use './mixin.scss' as M;
+
+
+
+
+@include M.medias(mobile) {
+// ocultar nav al presionar el boton de menu
+    
+
+
+
+}
+
+@include M.medias(tablet) {
+
+
+}
+
+@include M.medias(desltop) {
+
+
+}
