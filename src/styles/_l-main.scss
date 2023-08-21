@@ -5,10 +5,13 @@
 @use './h-colors' as C;
 @use './h-fonts' as F;
 
+
+
 // Main
 .Main {
     padding: 20px;
-    
+    background-color: C.$background;
+
 // Estilos para mobile
     @include M.medias(mobile) {
 
@@ -24,6 +27,24 @@
             grid-template-columns: 1fr;
             gap: 1rem;
             font-family: F.$mainFont;
+
+            .product__article-m {
+                margin-left: 10px;
+
+                p {
+                    margin-top: 5px;
+                }
+            }
+
+            .product__article-f {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                text-decoration:underline;
+                font-weight: bold;
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
 
             img{
                 max-width: 100%;

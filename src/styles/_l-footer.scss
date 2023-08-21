@@ -8,19 +8,13 @@
 // Footer
 .Footer{
     font-family: F.$footerFont;
-    
-    //position: fixed;
-    //bottom: 0;
     width: 100%;
-
     background-color: C.$fBackgound;
     color: C.$fColor;
 
     .footer__form {
         background-color: C.$fSusBackgound;
     }
-
-
 }
 
 // Estilos Mobile
@@ -75,7 +69,6 @@
                     color: C.$background;
                 }
             }
-
         }
 
         .footer__contact{
@@ -150,7 +143,6 @@
     }
 
 }
-
 
 // Estilos Desktop
 @include M.medias(desktop) {
