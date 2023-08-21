@@ -1,24 +1,67 @@
 /* // Navbar */
+@use './h-colors' as C;
 
-@use './mixin.scss' as M;
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
 
+.nav-list li a {
+    text-decoration: none;
+    color: C.$colorNavP;
+}
 
+.open-menu,
+.close-menu {
+    display: none;
+}
 
+@media screen and (max-width: 550px) {
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
 
-@include M.medias(mobile) {
-// ocultar nav al presionar el boton de menu
+    .open-menu {
+        color: C.$colorNavP;
+    }
+
+    .close-menu {
+        color: C.$colorNavS;
+    }
+
+    .navbar__nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: C.$colorNavP;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .navbar__nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
     
+    .nav__list {
+        flex-direction: column;
+        align-items: end;
+    }
 
-
-
-}
-
-@include M.medias(tablet) {
-
-
-}
-
-@include M.medias(desltop) {
-
-
+    .nav__list li a {
+        color: C.$colorNavS;
+    }
 }
