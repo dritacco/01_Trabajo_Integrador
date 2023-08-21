@@ -297,6 +297,10 @@ html {
   display: none;
 }
 
+.active a {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 550px) {
   .open-menu,
   .close-menu {
