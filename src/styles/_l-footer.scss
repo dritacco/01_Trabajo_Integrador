@@ -6,11 +6,11 @@
 @use './h-fonts' as F;
 
 // Footer
-footer{
+.Footer{
     font-family: F.$footerFont;
     
-    position: fixed;
-    bottom: 0;
+    //position: fixed;
+    //bottom: 0;
     width: 100%;
 
     background-color: C.$fBackgound;
