@@ -56,13 +56,66 @@
         </section>
     </header>
 
-
-    <main class="Main">
-
+    <main class="main__alta">
+        <section class="alta__section">
+            <article class="section__title">
+                <h1>Gestión de Productos</h1>
+                <p>Complete el formulario para agregar productos a la venta.</p>
+            </article>
+            <article class="section__form">
+                <form action="">
+                    <div class="form__box">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio" placeholder="Precio del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="stock">Stock</label>
+                        <input type="number" name="stock" id="stock" placeholder="Stock del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="marca">Marca</label>
+                        <input type="text" name="marca" id="marca" placeholder="Marca del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="categoria">Categoría</label>
+                        <input type="text" name="categoria" id="categoria" placeholder="Categoría del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="descripcionCorta">Descripción Corta</label>
+                        <input type="text" name="descripcionCorta" id="descripcionCorta" placeholder="Descripción Corta del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="descripcionLarga">Descripción Larga</label>
+                        <input type="text" name="descripcionLarga" id="descripcionLarga" placeholder="Descripción Larga del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="envio">Envío sin cargo</label>
+                        <select name="envio" id="envio">
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                        </select>
+                    </div>
+                    <div class="form__box">
+                        <label for="edadDesde">Edad Desde</label>
+                        <input type="number" name="edadDesde" id="edadDesde" placeholder="Edad Desde del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="edadHasta">Edad Hasta</label>
+                        <input type="number" name="edadHasta" id="edadHasta" placeholder="Edad Hasta del producto">
+                    </div>
+                    <div class="form__box">
+                        <label for="foto">Adjuntar Foto</label>
+                        <input id="boxPicture" type="file" name="foto" id="foto" placeholder="Foto del producto">
+                        <input id="altaSubmit" class="box__buttom" type="submit" value="Ingresar">
+                    </div>
+                </form>
+            </article>
+        </section>
     </main>
-
-
-
 
     <footer class="Footer">
 <!--Suscripción a página de Ofertas-->
