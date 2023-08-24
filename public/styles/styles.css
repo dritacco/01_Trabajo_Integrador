@@ -348,7 +348,13 @@ html {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: white;
 }
+.main__alta p {
+  color: rgb(100, 100, 100);
+}
 @media (min-width: 320px) {
+  .main__alta .alta__section .section__title p {
+    margin-bottom: 20px;
+  }
   .main__alta .alta__section .section__form .form__box {
     display: flex;
     flex-direction: column;
@@ -385,9 +391,168 @@ html {
     height: 40px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    width: 150px;
+    width: 95px;
   }
   .main__alta .alta__section .section__form .form__box .box__buttom:hover {
     background-color: rgb(0, 0, 0);
+  }
+}
+@media (min-width: 768px) {
+  .main__alta {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .main__alta .alta__section {
+    display: flex;
+  }
+  .main__alta .alta__section .section__title {
+    margin-right: 50px;
+    margin-top: 100px;
+  }
+  .main__alta .alta__section .section__title p {
+    color: rgb(100, 100, 100);
+  }
+  .main__alta .alta__section .section__form {
+    width: 60%;
+  }
+}
+
+.main__contacto {
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: white;
+}
+.main__contacto p {
+  color: rgb(100, 100, 100);
+}
+@media (min-width: 320px) {
+  .main__contacto .main__section p {
+    margin-bottom: 20px;
+  }
+  .main__contacto .main__section .section__form .form__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .main__contacto .main__section .section__form .form__box label {
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .main__contacto .main__section .section__form .form__box input {
+    background: white;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: rgb(100, 100, 100);
+    font-size: 13px;
+    padding: 11px 15px;
+    line-height: 16px;
+    height: 40px;
+  }
+  .main__contacto .main__section .section__form .form__box textarea {
+    background: white;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: rgb(100, 100, 100);
+    font-size: 13px;
+    padding: 11px 15px;
+    line-height: 16px;
+    height: 100px;
+  }
+  .main__contacto .main__section .section__form .form__input-buttom {
+    margin-top: 20px;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 11px 15px;
+    line-height: 16px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 95px;
+  }
+  .main__contacto .main__section .section__form .form__input-buttom:hover {
+    background-color: rgb(0, 0, 0);
+  }
+}
+@media (min-width: 768px) {
+  .main__contacto {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .main__contacto .main__section {
+    display: flex;
+  }
+  .main__contacto .main__section .section__titleA {
+    margin-right: 20%;
+  }
+  .main__contacto .main__section .section__titleA p {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .main__contacto .main__section .section__titleB {
+    margin-top: 70px;
+  }
+}
+
+.main__nosotros {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: white;
+  padding: 20px;
+}
+@media (min-width: 320px) {
+  .main__nosotros img {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 200px;
+    object-fit: none;
+  }
+  .main__nosotros p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  .main__nosotros .presentation__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main__nosotros .card__map {
+    text-align: center;
+  }
+  .main__nosotros .card__map .map__title {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .main__nosotros .nosotros__card {
+    display: flex;
+    padding: 20px;
+    font-size: 1.4rem;
+  }
+  .main__nosotros .nosotros__card .card__presentation {
+    width: 40%;
+    text-align: justify;
+  }
+  .main__nosotros .nosotros__card .card__map {
+    margin-top: 40px;
+    width: 60%;
+    text-align: center;
+  }
+  .main__nosotros .nosotros__card .card__map .map__title {
+    margin-bottom: 20px;
+  }
+  .main__nosotros .nosotros__card .card__map iframe {
+    width: 500px;
+    height: 400px;
   }
 }

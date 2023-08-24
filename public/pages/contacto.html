@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magher</title>
+    <title>Ritacco</title>
 
     <script defer src="../../src/js/main.js"></script>
     <link rel="stylesheet" href="../styles/reset.css">
@@ -30,7 +30,7 @@
 <!--Logo de la marca-->
             <article class="article__logo">
                 <picture class="article__logo-img">
-                    <img src="../images/logoHeader.svg" alt="Logo Header">
+                    <img src="../images/Ritacco-Logo-header.png" alt="Logo Header">
                 </picture>
             </article>
 
@@ -57,12 +57,44 @@
     </header>
 
 
-    <main class="Main">
+    <main class="main__contacto">
 
+        <!-- formulario para enviar consultas y poner nombre, email y comentarios-->
+
+        <section class="main__section">
+            <div class="section__titleA">
+            <article class="section__firstTitle">
+                <h1>CONTACTO</h1>
+                <p>PREGUNTAS Y RESPUESTAS</p>
+            </article>
+            </div>
+
+            <div class="section__titleB">
+            <article class="section__title">
+                <h1>DEJANOS TU COMENTARIO O CONSULTA!</h1>
+                <P>Te respondemos a la brevedad</P>
+            </article>
+
+            <article class="section__form">
+                <form class="form__input" action="index.php" method="post">
+                    <div class="form__box">
+                        <label for="name">Nombre</label>
+                        <input class="form__input-text" type="text" name="name" placeholder="Escriba su Nombre">
+                    </div>
+                    <div class="form__box">
+                        <label for="email">Email</label>
+                        <input class="form__input-text" type="email" name="email" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="form__box">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form__input-text" name="message" placeholder="Comentarios"></textarea>
+                    </div>
+                    <input class="form__input-buttom" type="submit" value="ENVIAR">
+                    
+                </form>
+            </article>
+            </div>
     </main>
-
-
-
 
     <footer class="Footer">
 <!--Suscripción a página de Ofertas-->
@@ -100,7 +132,7 @@
 <!--Logo del footer-->
         <div class="footer__brand">
             <picture class="footer__brand-logo">
-                <img src="../images/logoFooter.webp" alt="Brand Image">
+                <img src="../images/Ritacco-Logo-footer.svg" height="24" width="138" alt="Brand Image">
                 <p class="brand__copy">&copy; 2023. Todos los derechos reservados - Términos y condiciones</p> 
             </picture>   
 <!--Logos de links externos-->

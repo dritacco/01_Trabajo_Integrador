@@ -1,19 +1,6 @@
 // Declaraciones globales
 
-// Botones
-@mixin Button ( $fontSize, $fontWeight, $color, $backgroundColor, $borderRadius, $boxShadow, $padding : false ) {
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-    color: $color;
-    background-color: $backgroundColor;
-    border-radius: $borderRadius;
-    box-shadow: $boxShadow;
-    @if $padding{
-        padding: $padding;
-    };
-}
-
-//mediaq
+// Mixin para media queries
 @mixin medias($breakpoint){
 	@if $breakpoint == mobile{
 		@media (min-width: 320px){
