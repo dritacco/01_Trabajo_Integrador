@@ -36,14 +36,32 @@
             }
         }
 
+        .nosotros__card {
+            margin-bottom: 40px;
+        }
+
+
+
     }
  
 
     @include M.medias(tablet) {
+        img {
+            height: 400px;
+        }
+
+        .nosotros__card {
+            font-size: 1.2rem;
+        }
+
 
     }
 
     @include M.medias(desktop) {
+
+        img {
+            height: 600px;
+        }
 
         .nosotros__card {
             display: flex;
