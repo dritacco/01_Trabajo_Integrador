@@ -13,6 +13,11 @@
         color: C.$colorGrey;
     }
 
+    .error {
+        text-align: left;
+        padding-top: 10px;
+    }
+
 
     @include M.medias(mobile) {
         .alta__section {

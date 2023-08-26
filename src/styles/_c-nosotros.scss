@@ -40,6 +40,11 @@
             margin-bottom: 40px;
         }
 
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+
 
 
     }
@@ -52,6 +57,11 @@
 
         .nosotros__card {
             font-size: 1.2rem;
+
+            iframe {
+                width: 500px;
+                height: 400px;
+            }
         }
 
 
